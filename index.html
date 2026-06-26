@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anandi Sah — Software Developer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-orb orb1"></div>
+<div class="bg-orb orb2"></div>
+<div class="bg-orb orb3"></div>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" onclick="closeMobileNav()">✕</button>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#skills" onclick="closeMobileNav()">Skills</a>
+  <a href="#projects" onclick="closeMobileNav()">Projects</a>
+  <a href="#experience" onclick="closeMobileNav()">Experience</a>
+  <a href="#research" onclick="closeMobileNav()">Research</a>
+  <a href="#achievements" onclick="closeMobileNav()">Achievements</a>
+  <a href="#resume-section" onclick="closeMobileNav()">Resume</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-logo">&lt;<span>AS</span> /&gt;</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#resume-section">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-mobile-btn" onclick="openMobileNav()">☰</button>
+</nav>
+<!-- HERO -->
+ 
+<section id="hero">
+
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="hero-content">
+
+        <div class="hero-greeting">Hello! I'm</div>
+
+        <h1 class="hero-name">
+            Anandi Sah
+            <br>
+            <span class="gradient">Software Developer</span>
+        </h1>
+
+        <div class="hero-typing">
+            <span id="typing-text"></span>
+            <span class="cursor">|</span>
+        </div>
+
+        <p class="hero-desc">
+            Computer Science Engineering student passionate about building scalable software
+            solutions, RESTful APIs, Data Analytics and solving complex problems.
+            Strong foundations in DSA, DBMS, Operating Systems and Computer Networks.
+        </p>
+
+        <div class="hero-btns">
+            <a href="#projects" class="btn-primary">View My Work →</a>
+            <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+
+        <div class="hero-socials">
+
+            <a href="https://github.com/Anandisah07" target="_blank" class="social-icon">
+                <!-- GitHub SVG -->
+            </a>
+
+            <a href="https://www.linkedin.com/in/anandi-sah" target="_blank" class="social-icon">
+                <!-- LinkedIn SVG -->
+            </a>
+
+            <a href="mailto:anandisah1307@gmail.com" class="social-icon">
+                <!-- Email SVG -->
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fade-in">
+    
+    <h2 class="section-title">
+      About <span style="color:var(--primary)">Me</span>
+    </h2>
+  </div>
+
+  <div class="about-grid fade-in">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="about-avatar">
+        <img src="profile.jpeg" alt="Anandi Sah" class="profile-photo">
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Internships</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">LeetCode Problems</div>
+        </div>
+      </div>
+
+    </div> <!-- THIS WAS MISSING -->
+
+    <!-- RIGHT COLUMN -->
+    <div class="about-text">
+
+      <p>I'm a <span class="highlight">Computer Science Engineering</span> student at Chandigarh University (2023–2027), passionate about building <span class="highlight-c">scalable software solutions</span> and engineering elegant solutions to complex problems.</p>
+
+      <p>My expertise spans <span class="highlight">REST API design</span>, database architecture, and systems programming. I work with <span class="highlight-c">Flask, Node.js, MySQL, and MongoDB</span> to build robust backends, and have deep knowledge of <span class="highlight">TCP/IP networking</span>, socket programming, and concurrent systems.</p>
+
+      <p>I have strong CS fundamentals — <span class="highlight-c">DSA (100+ LeetCode), DBMS, Operating Systems, OOP, and Computer Networks</span> — which I apply to write efficient, maintainable code following MVC architecture and REST principles.</p>
+
+      <p>Currently pursuing academic research on <span class="highlight">AI-powered legal tools</span> and <span class="highlight-c">ML-based unemployment prediction</span>, looking for backend engineering roles and internships.</p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="fade-in">
+    
+    <h2 class="section-title"> Skills </h2>
+  </div>
+  <div class="skills-grid fade-in">
+    <div class="skill-category">
+      <div class="skill-cat-header"><div class="skill-cat-icon" style="background:rgba(168,85,247,0.15);"></div><span class="skill-cat-title">Languages</span></div>
+      <div class="skill-tags"><span class="skill-tag tag-purple">Python</span><span class="skill-tag tag-purple">C/C++</span><span class="skill-tag tag-purple">SQL</span><span class="skill-tag tag-purple">JavaScript</span><span class="skill-tag tag-purple">Java</span><span class="skill-tag tag-purple">HTML/CSS</span></div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><div class="skill-cat-icon" style="background:rgba(34,211,238,0.1);"></div><span class="skill-cat-title">Backend Frameworks</span></div>
+      <div class="skill-tags"><span class="skill-tag tag-cyan">Flask</span><span class="skill-tag tag-cyan">Node.js</span><span class="skill-tag tag-cyan">Express.js</span><span class="skill-tag tag-cyan">REST APIs</span><span class="skill-tag tag-cyan">JWT Auth</span><span class="skill-tag tag-cyan">MVC</span></div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><div class="skill-cat-icon" style="background:rgba(99,102,241,0.15);"></div><span class="skill-cat-title">Databases</span></div>
+      <div class="skill-tags"><span class="skill-tag tag-blue">MySQL</span><span class="skill-tag tag-blue">MongoDB</span><span class="skill-tag tag-blue">SQLite</span><span class="skill-tag tag-blue">DBMS</span><span class="skill-tag tag-blue">SQL Queries</span></div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><div class="skill-cat-icon" style="background:rgba(34,197,94,0.1);"></div><span class="skill-cat-title">Networking & Systems</span></div>
+      <div class="skill-tags"><span class="skill-tag tag-green">TCP/IP</span><span class="skill-tag tag-green">Socket Programming</span><span class="skill-tag tag-green">HTTP/DNS</span><span class="skill-tag tag-green">Threading</span><span class="skill-tag tag-green">OS Concepts</span></div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><div class="skill-cat-icon" style="background:rgba(245,158,11,0.1);"></div><span class="skill-cat-title">Tools & Platforms</span></div>
+      <div class="skill-tags"><span class="skill-tag tag-amber">Git & GitHub</span><span class="skill-tag tag-amber">Linux</span><span class="skill-tag tag-amber">AWS (basics)</span><span class="skill-tag tag-amber">VS Code</span><span class="skill-tag tag-amber">Excel</span></div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><div class="skill-cat-icon" style="background:rgba(168,85,247,0.15);"></div><span class="skill-cat-title">Core CS</span></div>
+      <div class="skill-tags"><span class="skill-tag tag-purple">DSA</span><span class="skill-tag tag-purple">OOP</span><span class="skill-tag tag-purple">DBMS</span><span class="skill-tag tag-purple">OS</span><span class="skill-tag tag-purple">Computer Networks</span><span class="skill-tag tag-purple">Agile</span></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="fade-in">
+    
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid fade-in">
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,rgba(168,85,247,0.2),rgba(34,211,238,0.1));">
+        <span style="font-size:3.5rem;"></span>
+        <div style="position:absolute;top:12px;right:12px;background:rgba(34,211,238,0.15);border:1px solid rgba(34,211,238,0.3);border-radius:6px;padding:4px 10px;font-size:0.72rem;color:var(--cyan);font-family:'Fira Code',monospace;">Featured</div>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Digital Wallet System (PayWallet)</div>
+        <div class="project-desc">Secure Flask + MySQL backend with JWT authentication. Atomic DB operations, locking for concurrent payments, and 5+ RESTful API endpoints for full wallet management.</div>
+        <div class="project-tags"><span class="skill-tag tag-cyan">Flask</span><span class="skill-tag tag-blue">MySQL</span><span class="skill-tag tag-purple">JWT</span><span class="skill-tag tag-green">REST API</span><span class="skill-tag tag-amber">Python</span></div>
+        <div class="project-btns">
+          <a href="https://github.com/Anandisah07" target="_blank" class="proj-btn proj-btn-primary"> GitHub</a>
+          <a href="#" class="proj-btn proj-btn-secondary"> Live Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,rgba(34,211,238,0.15),rgba(99,102,241,0.15));"><span style="font-size:3.5rem;"></span></div>
+      <div class="project-body">
+        <div class="project-title">TCP Multi-Client Chat App</div>
+        <div class="project-desc">Real-time multi-user chat with Python sockets and multithreading. Concurrent client connections, message broadcasting, and socket synchronization handling.</div>
+        <div class="project-tags"><span class="skill-tag tag-amber">Python</span><span class="skill-tag tag-green">TCP/IP</span><span class="skill-tag tag-purple">Sockets</span><span class="skill-tag tag-cyan">Multithreading</span></div>
+        <div class="project-btns">
+          <a href="https://github.com/Anandisah07" target="_blank" class="proj-btn proj-btn-primary"> GitHub</a>
+          <a href="#" class="proj-btn proj-btn-secondary"> Live Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img" style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(168,85,247,0.15));"><span style="font-size:3.5rem;"></span></div>
+      <div class="project-body">
+        <div class="project-title">Smart Link Hub</div>
+        <div class="project-desc">Scalable URL shortener and analytics tracker. Node.js + MongoDB, modular MVC REST API with optimized DB queries and load-tested HTTP handling.</div>
+        <div class="project-tags"><span class="skill-tag tag-cyan">Node.js</span><span class="skill-tag tag-blue">MongoDB</span><span class="skill-tag tag-green">REST API</span><span class="skill-tag tag-purple">MVC</span><span class="skill-tag tag-amber">Express.js</span></div>
+        <div class="project-btns">
+          <a href="https://github.com/Anandisah07" target="_blank" class="proj-btn proj-btn-primary"> GitHub</a>
+          <a href="#" class="proj-btn proj-btn-secondary"> Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="fade-in">
+    
+    <h2 class="section-title"> Experience </h2>
+  </div>
+  <div class="timeline fade-in">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div><div class="timeline-role">Data Analytics Intern (Virtual)</div><div class="timeline-company">Deloitte</div></div>
+          <span class="timeline-date">Jul 2025</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Performed data cleaning, preprocessing, and transformation on structured datasets for business analysis.</li>
+          <li>Worked with SQL-based analytical workflows for reporting and data interpretation pipelines.</li>
+          <li>Contributed to data-driven decision making through structured analytical problem-solving.</li>
+          <li>Strengthened expertise in reporting workflows and data interpretation techniques.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <div><div class="timeline-role">Trainee — Summer Training Program</div><div class="timeline-company">Intel · Chandigarh University</div></div>
+          <span class="timeline-date">May -Jun 2025</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Applied data analysis techniques to solve structured problems during training sprints.</li>
+          <li>Worked on mini-projects involving data processing and interpretation at scale.</li>
+          <li>Strengthened analytical thinking and problem-solving through practical engineering exercises.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="fade-in">
+    
+    <h2 class="section-title">Academic Research</h2>
+  </div>
+  <div class="research-grid fade-in">
+    <div class="research-card">
+      <div class="research-num">01</div>
+      <div class="research-title">NyayaSetu – Bridging Legal Literacy Gaps with AI-Powered Summarization and Simplification</div>
+      <div class="research-desc">Addressing the challenge of legal literacy in India by developing an AI system that summarizes and simplifies complex legal documents using NLP techniques.</div>
+      <div class="research-badge">Academic Research · NLP / AI</div>
+    </div>
+    <div class="research-card">
+      <div class="research-num">02</div>
+      <div class="research-title">Data-Driven Unemployment Risk Prediction using Demographic and Economic Features with Classical ML Models</div>
+      <div class="research-desc">Applying classical ML models to demographic and economic datasets to predict unemployment risk through feature engineering, model selection, and evaluation.</div>
+      <div class="research-badge">Academic Research · ML / Data Science</div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="fade-in">
+    
+    <h2 class="section-title"> Achievements </h2>
+  </div>
+  <div class="achievements-grid fade-in">
+    <div class="ach-card"><div class="ach-icon"></div><div class="ach-title">AMD AI RL Hackathon</div><div class="ach-sub">IIT Delhi · Reinforcement Learning</div><div class="ach-badge"> Top 30</div></div>
+    <div class="ach-card"><div class="ach-icon"></div><div class="ach-title">GenAI Hackathon</div><div class="ach-sub">Generative AI · National Level</div><div class="ach-badge"> Top 10</div></div>
+    <div class="ach-card"><div class="ach-icon"></div><div class="ach-title">LeetCode DSA</div><div class="ach-sub">Consistent Problem Solving</div><div class="ach-badge"> 100+ Problems</div></div>
+    <div class="ach-card"><div class="ach-icon"></div><div class="ach-title">Chandigarh University</div><div class="ach-sub">B.E. Computer Science Engineering</div><div class="ach-badge">CGPA 7.0</div></div>
+  </div>
+</section>
+<section id="gallery">
+  <div class="gallery-grid">
+
+<img src="3.jpeg">
+<img src="2.jpeg">
+<img src="1.jpeg">
+<img src="5.jpeg">
+<img src="4.jpeg">
+
+</div>
+</section>
+
+<!-- RESUME -->
+<section id="resume-section">
+<div class="fade-in">
+
+<h2 class="section-title"> Resume/CV</h2>
+</div>
+<div class="resume-container">
+<p>Download my latest resume to learn more about my projects,
+technical skills, internships, and academic achievements.</p>
+<div class="resume-btns">
+<a href="assets/Anandi_Sah_Resume.pdf"
+download
+class="btn-primary">
+Download Resume</a>
+<a href="mailto:anandisah1307@gmail.com"
+class="btn-outline">
+Email Me
+</a>
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="fade-in">
+   
+    <h2 class="section-title">Let's Connect</h2>
+  </div>
+  <div class="contact-grid fade-in">
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p>Open to internships, collaborations, and backend engineering opportunities. My inbox is always open!</p>
+      <div class="contact-links">
+        <a href="mailto:anandisah1307@gmail.com" class="contact-link"><div class="contact-link-icon" style="background:rgba(168,85,247,0.15);"></div><div><div style="font-size:0.8rem;color:var(--muted);">Email</div><div style="color:var(--text);">anandisah1307@gmail.com</div></div></a>
+        <a href="tel:+918864011307" class="contact-link"><div class="contact-link-icon" style="background:rgba(34,211,238,0.1);"></div><div><div style="font-size:0.8rem;color:var(--muted);">Phone</div><div style="color:var(--text);">+91 8864011307</div></div></a>
+        <a href="https://www.linkedin.com/in/anandi-sah-9576722b5/" target="_blank" class="contact-link"><div class="contact-link-icon" style="background:rgba(99,102,241,0.15);"></div><div><div style="font-size:0.8rem;color:var(--muted);">LinkedIn</div><div style="color:var(--text);">linkedin.com/in/anandi-sah</div></div></a>
+        <a href="https://github.com/Anandisah07" target="_blank" class="contact-link"><div class="contact-link-icon" style="background:rgba(255,255,255,0.05);"></div><div><div style="font-size:0.8rem;color:var(--muted);">GitHub</div><div style="color:var(--text);">github.com/Anandisah07</div></div></a>
+      </div>
+    </div>
+    <div>
+      <div class="glass-card" style="padding:30px;">
+  <h3 style="margin-bottom:20px;">Send Message</h3>
+
+  <input
+    type="text"
+    id="cf-name"
+    class="form-input"
+    placeholder="Your Name"
+  >
+
+  <br><br>
+
+  <input
+    type="email"
+    id="cf-email"
+    class="form-input"
+    placeholder="Your Email"
+  >
+
+  <br><br>
+
+  <textarea
+    id="cf-message"
+    class="form-input"
+    rows="5"
+    placeholder="Your Message"
+  ></textarea>
+
+  <br><br>
+
+  <button
+    id="cf-btn"
+    class="btn-primary"
+    onclick="handleContact()"
+  >
+    Send Message
+  </button>
+</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-text">Designed & Built by <span>Anandi Sah</span></div>
+    <div class="footer-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="https://github.com/Anandisah07" target="_blank"> GitHub</a></div>
+  
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
